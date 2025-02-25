@@ -62,6 +62,8 @@ public class Menu extends Base {
         action.perform();
         Thread.sleep(2000);
         System.out.println("Successfully clicked the 'Menu' button!");
+        Thread.sleep(5000);
+        
     	
     	
     	
