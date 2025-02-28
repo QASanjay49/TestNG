@@ -1,6 +1,7 @@
 package testcases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -28,11 +29,22 @@ public class MyProfile extends Base {
 //	        driver.findElement(getInputFields("Bio")).sendKeys("Passionate about skincare and beauty Ellis is the proud owner of glow & co. , a trusted destination for premium face and skin care productsPassionate about skincare and beauty Ellis is the proud owner of glow & co. , a trusted destination for premium face and skin care products");
 //	        
 //	}
-	@Test
+	@Test(priority = 3)
 	public void Name() throws InterruptedException {
 		Thread.sleep(10000);
 		driver.findElement(getInputField("name")).click();
+		driver.findElement(getInputField("name")).clear();
 		driver.findElement(getInputField("name")).sendKeys("Rajesh");
+		driver.findElement(getInputField("name")).sendKeys(Keys.TAB);
+//		driver.findElement(By.xpath("//input[@name='name']")).click();
+		
+	}
+	@Test(priority = 4)
+	public void Bio() throws InterruptedException {
+		Thread.sleep(10000);
+		driver.findElement(getInputField("bio")).click();
+		driver.findElement(getInputField("bio")).clear();
+		driver.findElement(getInputField("bio")).sendKeys("Rajesh Rajesh Rajesh Rajesh Rajesh Rajesh Rajesh Rajesh Rajesh");
 //		driver.findElement(By.xpath("//input[@name='name']")).click();
 		
 	}

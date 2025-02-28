@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.MyProfile">
+      <class name="testPackage.FinalOne">
         <methods>
-          <include name="setup"/>
-          <include name="Myprofile"/>
-          <include name="Name"/>
-          <include name="getDriver"/>
+          <include name="setUp"/>
+          <include name="testClickPhoneInput"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testcases.MyProfile -->
+      </class> <!-- testPackage.FinalOne -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

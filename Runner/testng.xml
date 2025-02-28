@@ -5,7 +5,7 @@
     <classes>
       <class name="testcases.Login"/>
      <class name="testcases.Menu"/>
-     <class name="testcases.MyProfile"/>
+	<class name="testcases.MyProfile"/>
     </classes>
    
   </test>
