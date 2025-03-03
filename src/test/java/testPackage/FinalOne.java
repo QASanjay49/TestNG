@@ -25,7 +25,7 @@ public class FinalOne {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize(); // Optional: Maximize the browser window
-        wait = new WebDriverWait(driver, Duration.ofSeconds(50)); // Wait up to 30 seconds
+        wait = new WebDriverWait(driver, Duration.ofSeconds(60)); // Wait up to 30 seconds
     }
 
     @Test
@@ -33,7 +33,12 @@ public class FinalOne {
         try {
             // Navigate to the website
             driver.get("https://stg-vendor.that-time.co.uk/enter-phone");
-
+            WebElement triggerButton = wait.until(ExpectedConditions.elementToBeClickable(
+                    By.cssSelector(".ng-invalid") // Replace with actual trigger element selector
+                ));
+                triggerButton.click();
+                triggerButton.sendKeys("7457413014");
+                
             // Wait for the phone input to be visible and clickable (assuming it’s in the regular DOM)
             WebElement phoneInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".control-phone-control input")));
             phoneInput = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".control-phone-control input")));
@@ -61,11 +66,11 @@ public class FinalOne {
         }
     }
 
-    @AfterClass
-    public void tearDown() {
-        // Clean up: Close the browser
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+//    @AfterClass
+//    public void tearDown() {
+//        // Clean up: Close the browser
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 }

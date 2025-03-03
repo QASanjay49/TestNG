@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CSSSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CSSTest(failed)">
+    <classes>
+      <class name="testPackage.CSSFinal">
+        <methods>
+          <include name="setUp"/>
+          <include name="testPhoneInputAndNextButton"/>
+        </methods>
+      </class> <!-- testPackage.CSSFinal -->
+      <class name="testPackage.CSSPassword">
+        <methods>
+          <include name="setUp"/>
+          <include name="testEnterPasswordAndSubmit"/>
+        </methods>
+      </class> <!-- testPackage.CSSPassword -->
+    </classes>
+  </test> <!-- CSSTest(failed) -->
+</suite> <!-- Failed suite [CSSSuite] -->
