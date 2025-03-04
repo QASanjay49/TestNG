@@ -75,10 +75,7 @@ public class MyProfile extends Base {
 	    public void scrollToBottom() throws InterruptedException {
 		Thread.sleep(5000);
 			Actions action=new Actions(driver);
-//			action.sendKeys(Keys.PAGE_DOWN);
 			action.scrollByAmount(0, 1000).perform();
-//	        JavascriptExecutor js = (JavascriptExecutor) driver;
-//	        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 	        Thread.sleep(10000);
 	        WebElement webele = driver.findElement(By.cssSelector("ion-button[type=\"submit\"]"));
 			webele.click();
