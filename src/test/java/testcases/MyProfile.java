@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -55,6 +56,7 @@ public class MyProfile extends Base {
 			emailF.click();
 			emailF.clear();
 			emailF.sendKeys("carrykor@gmail.com");
+			emailF.sendKeys(Keys.TAB);
 			
 //			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginButton);
 //
@@ -69,17 +71,25 @@ public class MyProfile extends Base {
 //			driver.findElement(By.cssSelector("ion-button.mt-auto[ng-reflect-color=\"secondary\"]")).click();
 			
 		}
-	/*	@Test(priority = 5)
+	@Test(priority = 5)
 	    public void scrollToBottom() throws InterruptedException {
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		Thread.sleep(5000);
+			Actions action=new Actions(driver);
+//			action.sendKeys(Keys.PAGE_DOWN);
+			action.scrollByAmount(0, 1000).perform();
+//	        JavascriptExecutor js = (JavascriptExecutor) driver;
+//	        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 	        Thread.sleep(10000);
 	        WebElement webele = driver.findElement(By.cssSelector("ion-button[type=\"submit\"]"));
 			webele.click();
-	    } */
+	    } 
 		
-//		public void PageScrollBottom() {
-		@Test(priority = 5)
+		// Scroll down to the bottom of the page  
+     
+        
+		
+		
+	/*	@Test(priority = 5)
 		
 		public void scrollToBottomAndSave() {
 		    try {

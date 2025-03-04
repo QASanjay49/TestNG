@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,17 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.MyProfile" class="method navigator-link" hash-for-method="MyBioUpdate">MyBioUpdate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Menu" class="method navigator-link" hash-for-method="clickMenuTab">clickMenuTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.MyProfile" class="method navigator-link" hash-for-method="scrollToBottomAndSave">scrollToBottomAndSave</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.MyProfile" class="method navigator-link" hash-for-method="scrollToBottom">scrollToBottom</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -129,6 +119,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.Login" class="method navigator-link" hash-for-method="LoginData(7457413014, THATtime321!A)">LoginData(7457413014, THATtime321!A)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.MyProfile" class="method navigator-link" hash-for-method="MyBioUpdate">MyBioUpdate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Menu" class="method navigator-link" hash-for-method="clickMenuTab">clickMenuTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -151,18 +151,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="MyBioUpdate">
-                  </a> <!-- MyBioUpdate -->
-                  <span class="method-name">MyBioUpdate</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input.native-input.sc-ion-input-md[name=&apos;name&apos;]&quot;}
+                  <a name="scrollToBottom">
+                  </a> <!-- scrollToBottom -->
+                  <span class="method-name">scrollToBottom</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd49ab3a634fd4b3aade3239a921696a, findElement {using=css selector, value=input.native-input.sc-ion-input-md[name=&apos;name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53225/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd49ab3a634fd4b3aade3239a921696a
+Command: [4c59f93e8bb05d80529ff27205796478, clickElement {id=f.ADD10941E8CA77E3825C07DE2E66B980.d.833A3808935620F7D5CFD189D2F07DC8.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56947}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56947/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4c59f93e8bb05d80529ff27205796478)] -&gt; css selector: ion-button[type=&quot;submit&quot;]]
+Session ID: 4c59f93e8bb05d80529ff27205796478
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -170,69 +170,31 @@ Session ID: bd49ab3a634fd4b3aade3239a921696a
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at testcases.MyProfile.MyBioUpdate(MyProfile.java:42)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testcases.MyProfile.scrollToBottom(MyProfile.java:84)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="scrollToBottomAndSave">
-                  </a> <!-- scrollToBottomAndSave -->
-                  <span class="method-name">scrollToBottomAndSave</span>
-                  <div class="stack-trace">java.lang.AssertionError: Test failed due to unexpected error: Expected condition failed: waiting for presence of element located by: By.cssSelector: .modal-container.flex.flex-col.bg-white.border-top.sidebar (tried for 30 second(s) with 500 milliseconds interval)
-	at testcases.MyProfile.scrollToBottomAndSave(MyProfile.java:118)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.Menu</span>
+              <img src="passed.png"/>
+              <span class="class-name">testcases.MyProfile</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickMenuTab">
-                  </a> <!-- clickMenuTab -->
-                  <span class="method-name">clickMenuTab</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Menu&apos;]&quot;}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd49ab3a634fd4b3aade3239a921696a, findElement {using=xpath, value=//span[text()=&apos;Menu&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53225/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd49ab3a634fd4b3aade3239a921696a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at testcases.Menu.clickMenuTab(Menu.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="MyBioUpdate">
+                  </a> <!-- MyBioUpdate -->
+                  <span class="method-name">MyBioUpdate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -245,6 +207,21 @@ Session ID: bd49ab3a634fd4b3aade3239a921696a
                   </a> <!-- LoginData(7457413014, THATtime321!A) -->
                   <span class="method-name">LoginData</span>
                   <span class="parameters">(7457413014, THATtime321!A)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Menu</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMenuTab">
+                  </a> <!-- clickMenuTab -->
+                  <span class="method-name">clickMenuTab</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -305,21 +282,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'scrollToBottomAndSave')
+data.setCell(0, 1, 'MyBioUpdate')
 data.setCell(0, 2, 'testcases.MyProfile')
-data.setCell(0, 3, 30351);
+data.setCell(0, 3, 30430);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginData')
 data.setCell(1, 2, 'testcases.Login')
-data.setCell(1, 3, 25416);
+data.setCell(1, 3, 25468);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'MyBioUpdate')
-data.setCell(2, 2, 'testcases.MyProfile')
-data.setCell(2, 3, 20064);
+data.setCell(2, 1, 'clickMenuTab')
+data.setCell(2, 2, 'testcases.Menu')
+data.setCell(2, 3, 18522);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickMenuTab')
-data.setCell(3, 2, 'testcases.Menu')
-data.setCell(3, 3, 2054);
+data.setCell(3, 1, 'scrollToBottom')
+data.setCell(3, 2, 'testcases.MyProfile')
+data.setCell(3, 3, 15379);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -375,38 +352,34 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">LoginData(7457413014, THATtime321!A)</span>
-                <span class="method-start">13326 ms</span>
+                <span class="method-start">18118 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Menu</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">clickMenuTab</span>
-                <span class="method-start">38760 ms</span>
+                <span class="method-start">43602 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.MyProfile</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">MyBioUpdate</span>
-                <span class="method-start">40825 ms</span>
+                <span class="method-start">62140 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">scrollToBottomAndSave</span>
-                <span class="method-start">60889 ms</span>
+                <span class="method-name">scrollToBottom</span>
+                <span class="method-start">92570 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Login</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">91304 ms</span>
+                <span class="method-start">107982 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

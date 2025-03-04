@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="8" passed="1" failed="3" skipped="0">
+<testng-results ignored="4" total="8" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-04T15:28:25 IST" name="Suite" finished-at="2025-03-04T15:29:44 IST" duration-ms="78701">
+  <suite started-at="2025-03-04T16:39:59 IST" name="Suite" finished-at="2025-03-04T16:41:30 IST" duration-ms="90746">
     <groups>
     </groups>
-    <test started-at="2025-03-04T15:28:25 IST" name="Test" finished-at="2025-03-04T15:29:44 IST" duration-ms="78701">
+    <test started-at="2025-03-04T16:39:59 IST" name="Test" finished-at="2025-03-04T16:41:30 IST" duration-ms="90746">
       <class name="testcases.Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Login@6743e411]" started-at="2025-03-04T15:28:13 IST" name="setup" finished-at="2025-03-04T15:28:25 IST" duration-ms="12538" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Login@10683d9d]" started-at="2025-03-04T16:39:42 IST" name="setup" finished-at="2025-03-04T16:39:59 IST" duration-ms="17203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginData(java.lang.String,java.lang.String)[pri:0, instance:testcases.Login@6743e411]" started-at="2025-03-04T15:28:26 IST" name="LoginData" data-provider="LoginData" finished-at="2025-03-04T15:28:52 IST" duration-ms="25416" status="PASS">
+        <test-method signature="LoginData(java.lang.String,java.lang.String)[pri:0, instance:testcases.Login@10683d9d]" started-at="2025-03-04T16:40:00 IST" name="LoginData" data-provider="LoginData" finished-at="2025-03-04T16:40:25 IST" duration-ms="25468" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,107 +27,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginData -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testcases.Login@6743e411]" started-at="2025-03-04T15:29:44 IST" name="getDriver" finished-at="2025-03-04T15:29:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testcases.Login@10683d9d]" started-at="2025-03-04T16:41:30 IST" name="getDriver" finished-at="2025-03-04T16:41:30 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
       </class> <!-- testcases.Login -->
       <class name="testcases.Menu">
-        <test-method signature="clickMenuTab()[pri:2, instance:testcases.Menu@185a6e9]" started-at="2025-03-04T15:28:52 IST" name="clickMenuTab" finished-at="2025-03-04T15:28:54 IST" duration-ms="2054" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Menu']"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd49ab3a634fd4b3aade3239a921696a, findElement {using=xpath, value=//span[text()='Menu']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53225/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd49ab3a634fd4b3aade3239a921696a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Menu']"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd49ab3a634fd4b3aade3239a921696a, findElement {using=xpath, value=//span[text()='Menu']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53225/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd49ab3a634fd4b3aade3239a921696a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at testcases.Menu.clickMenuTab(Menu.java:50)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="clickMenuTab()[pri:2, instance:testcases.Menu@229f66ed]" started-at="2025-03-04T16:40:25 IST" name="clickMenuTab" finished-at="2025-03-04T16:40:44 IST" duration-ms="18522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickMenuTab -->
       </class> <!-- testcases.Menu -->
       <class name="testcases.MyProfile">
-        <test-method signature="MyBioUpdate()[pri:4, instance:testcases.MyProfile@3b0090a4]" started-at="2025-03-04T15:28:54 IST" name="MyBioUpdate" finished-at="2025-03-04T15:29:14 IST" duration-ms="20064" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="MyBioUpdate()[pri:4, instance:testcases.MyProfile@3eb25e1a]" started-at="2025-03-04T16:40:44 IST" name="MyBioUpdate" finished-at="2025-03-04T16:41:14 IST" duration-ms="30430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyBioUpdate -->
+        <test-method signature="scrollToBottom()[pri:5, instance:testcases.MyProfile@3eb25e1a]" started-at="2025-03-04T16:41:14 IST" name="scrollToBottom" finished-at="2025-03-04T16:41:30 IST" duration-ms="15379" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input.native-input.sc-ion-input-md[name='name']"}
+              <![CDATA[element not interactable
   (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd49ab3a634fd4b3aade3239a921696a, findElement {using=css selector, value=input.native-input.sc-ion-input-md[name='name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53225/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd49ab3a634fd4b3aade3239a921696a]]>
+Command: [4c59f93e8bb05d80529ff27205796478, clickElement {id=f.ADD10941E8CA77E3825C07DE2E66B980.d.833A3808935620F7D5CFD189D2F07DC8.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56947}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56947/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4c59f93e8bb05d80529ff27205796478)] -> css selector: ion-button[type="submit"]]
+Session ID: 4c59f93e8bb05d80529ff27205796478]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input.native-input.sc-ion-input-md[name='name']"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd49ab3a634fd4b3aade3239a921696a, findElement {using=css selector, value=input.native-input.sc-ion-input-md[name='name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53225/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd49ab3a634fd4b3aade3239a921696a
+Command: [4c59f93e8bb05d80529ff27205796478, clickElement {id=f.ADD10941E8CA77E3825C07DE2E66B980.d.833A3808935620F7D5CFD189D2F07DC8.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\TS-031\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56947}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56947/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4c59f93e8bb05d80529ff27205796478)] -> css selector: ion-button[type="submit"]]
+Session ID: 4c59f93e8bb05d80529ff27205796478
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -138,11 +76,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at testcases.MyProfile.MyBioUpdate(MyProfile.java:42)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at testcases.MyProfile.scrollToBottom(MyProfile.java:84)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -171,50 +107,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MyBioUpdate -->
-        <test-method signature="scrollToBottomAndSave()[pri:5, instance:testcases.MyProfile@3b0090a4]" started-at="2025-03-04T15:29:14 IST" name="scrollToBottomAndSave" finished-at="2025-03-04T15:29:44 IST" duration-ms="30351" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test failed due to unexpected error: Expected condition failed: waiting for presence of element located by: By.cssSelector: .modal-container.flex.flex-col.bg-white.border-top.sidebar (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test failed due to unexpected error: Expected condition failed: waiting for presence of element located by: By.cssSelector: .modal-container.flex.flex-col.bg-white.border-top.sidebar (tried for 30 second(s) with 500 milliseconds interval)
-at testcases.MyProfile.scrollToBottomAndSave(MyProfile.java:118)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollToBottomAndSave -->
+        </test-method> <!-- scrollToBottom -->
       </class> <!-- testcases.MyProfile -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
