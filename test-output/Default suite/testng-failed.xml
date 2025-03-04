@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testPackage.Prifinal">
+      <class name="testcases.MyProfile">
         <methods>
-          <include name="testPasswordAndLoginButton"/>
-          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="MyBioUpdate"/>
+          <include name="getDriver"/>
         </methods>
-      </class> <!-- testPackage.Prifinal -->
+      </class> <!-- testcases.MyProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

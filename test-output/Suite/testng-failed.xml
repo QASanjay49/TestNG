@@ -6,10 +6,18 @@
       <class name="testcases.MyProfile">
         <methods>
           <include name="setup"/>
+          <include name="MyBioUpdate"/>
+          <include name="scrollToBottomAndSave"/>
           <include name="getDriver"/>
-          <include name="Bio"/>
         </methods>
       </class> <!-- testcases.MyProfile -->
+      <class name="testcases.Menu">
+        <methods>
+          <include name="setup"/>
+          <include name="getDriver"/>
+          <include name="clickMenuTab"/>
+        </methods>
+      </class> <!-- testcases.Menu -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
 
-public class ShopProfile {
+public class TestShopProfile {
     private WebDriver driver;
     private WebDriverWait wait;
 
