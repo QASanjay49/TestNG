@@ -2,11 +2,12 @@ package testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import TestNG.TestNG.Base;
 
 public class Services extends Base {
-
+@Test
 public void CreateService() throws InterruptedException {
 	Actions action=new Actions(driver);
 	action.scrollByAmount(0, 2000).perform();
