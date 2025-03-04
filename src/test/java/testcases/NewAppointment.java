@@ -19,6 +19,10 @@ public class NewAppointment extends Base {
 //	Select services
 	driver.findElement(By.xpath("//button[ normalize-space()='Select a service']")).click();
 	
+//	Submit button
+	driver.findElement(By.xpath("//button[ normalize-space()='Submit']"));
+	
+	
 	}
 
 }
