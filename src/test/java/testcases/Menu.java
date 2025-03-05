@@ -46,15 +46,16 @@ public class Menu extends Base {
 //            shadowRoot3.findElement(By.xpath("//span[normalize-space()='Menu']"))));
 //        menuButton.click();
         
-        Thread.sleep(2000);
-        driver.findElement(getMenuEle("Menu")).click();
-        Thread.sleep(4000);
-        
-        
-        
-//        driver.findElement(getMenuEle("Calendar")).click();
 //        Thread.sleep(2000);
+//        driver.findElement(getMenuEle("Menu")).click();
+//        Thread.sleep(4000);
         
+        
+    	Thread.sleep(2000);
+        driver.findElement(getMenuEle("Calendar")).click();
+        Thread.sleep(2000);
+        
+        /*
         WebElement ele = driver.findElement(By.xpath("//ion-card-title[normalize-space()='My Profile']"));
         Actions ob = new Actions(driver);
         ob.moveToElement(ele);
@@ -63,10 +64,10 @@ public class Menu extends Base {
         action.perform();
         Thread.sleep(2000);
         System.out.println("Successfully clicked the 'Menu' button!");
-        Thread.sleep(5000);
+        */
         
-        Thread.sleep(5000);
-        WebElement servicesB = driver.findElement(By.xpath("//ion-card-title[normalize-space()='Services']"));
+//        Thread.sleep(5000);
+//        WebElement servicesB = driver.findElement(By.xpath("//ion-card-title[normalize-space()='Services']"));
 //        servicesB.click();
         
        /*
