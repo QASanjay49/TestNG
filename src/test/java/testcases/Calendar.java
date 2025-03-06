@@ -2,25 +2,39 @@ package testcases;
 
 import org.openqa.selenium.By;
 
-/*
-public class Calendar {
+import TestNG.TestNG.Base;
+
+
+//public By getMenuEle(String menuName) {
+//	return By.xpath(String.format("//span[text()='%s']", menuName));
+//}
+
+
+public class Calendar extends Base{
 	
+	public By getMenuEle(String menuName) { 
+	return By.xpath(String.format("//a[ normalize-space()='%s']", menuName));
+	}
+	
+	public By getMenuBtn(String menuNameBtn) {
+		return By.xpath(String.format("//button[normalize-space()='%s']", menuNameBtn));
+	}
 	
 	public void NewAppointment() {
-	driver.findElement(By.xpath("//a[ normalize-space()='New Appointment']")).click();
+	driver.findElement(getMenuEle("New Appointment")).click();
 	}
 	
 	public void GenerateLink() {
-		driver.findElement(By.xpath("//a[ normalize-space()='Generate Link']")).click();
+		driver.findElement(getMenuEle(" Generate Link ")).click();
 	}
 	
 	public void BlockATime() {
-		driver.findElement(By.cssSelector("button.btn.solid.ion-color-tertiary.text-sm.py-2.px-3.flex.items-center.gap-1")).click();
+		driver.findElement(getMenuBtn(" Block a Time ")).click();
 	}
 	
 	public void UnblockATime() {
-		driver.findElement(By.xpath("//button[@style='background-color: #8be9ce;']")).click();		
+		driver.findElement(getMenuBtn(" Unblock a Time ")).click();	
 	}
 	
 }
-*/
+
