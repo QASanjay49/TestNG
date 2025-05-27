@@ -5,7 +5,16 @@
     <classes>
       <class name="testcases.Login"/>
       <class name="testcases.Menu"/>
-      <class name="testcases.NewAppointment"/>
+     
+      <class name="testcases.NewAppointments"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+
+
+
+
+
+

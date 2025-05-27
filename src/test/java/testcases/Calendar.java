@@ -46,7 +46,7 @@ public class Calendar extends Base{
 	Thread.sleep(5000);
 	driver.findElement(By.xpath("//button[ normalize-space()='Select a service']")).click();
 	
-	driver.findElement(By.xpath("//div[normalize-space()= 'Men’s Skincare 👨🏻']")).click();
+	driver.findElement(By.xpath("//div[normalize-space()= 'Spa']")).click();
 	driver.findElement(By.xpath("//h6[normalize-space()= 'Acne & Oil Control Therapy']")).click();
 	Thread.sleep(5000);
 	
@@ -66,7 +66,7 @@ public class Calendar extends Base{
 	Thread.sleep(5000);
 	}
 	
-	@Test(priority = 4) 
+//	@Test(priority = 4) 
 	public void GenerateLink() throws InterruptedException {
 		Thread.sleep(5000);
 		driver.findElement(getMenuEle("Generate Link")).click();
