@@ -1,52 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-27T18:16:15 IST" name="Suite" finished-at="2025-05-27T18:17:01 IST" duration-ms="45722">
+  <suite started-at="2025-05-28T17:57:44 IST" name="Suite" finished-at="2025-05-28T17:58:43 IST" duration-ms="58997">
     <groups>
     </groups>
-    <test started-at="2025-05-27T18:16:15 IST" name="Test" finished-at="2025-05-27T18:17:01 IST" duration-ms="45722">
-      <class name="testcases.Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Login@4a8355dd]" started-at="2025-05-27T18:15:55 IST" name="setup" finished-at="2025-05-27T18:16:15 IST" duration-ms="19458" status="PASS">
+    <test started-at="2025-05-28T17:57:44 IST" name="Test" finished-at="2025-05-28T17:58:43 IST" duration-ms="58997">
+      <class name="pom.Test.DashboardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pom.Test.DashboardTest@5386659f]" started-at="2025-05-28T17:57:44 IST" name="setUp" finished-at="2025-05-28T17:57:51 IST" duration-ms="6476" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LoginData(java.lang.String,java.lang.String)[pri:0, instance:testcases.Login@4a8355dd]" started-at="2025-05-27T18:16:16 IST" name="LoginData" data-provider="LoginData" finished-at="2025-05-27T18:16:42 IST" duration-ms="26015" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[7878787878]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[THATtime321!A]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpDashboardPage()[pri:0, instance:pom.Test.DashboardTest@5386659f]" started-at="2025-05-28T17:57:51 IST" name="setUpDashboardPage" finished-at="2025-05-28T17:57:51 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginData -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testcases.Login@4a8355dd]" started-at="2025-05-27T18:17:01 IST" name="getDriver" finished-at="2025-05-27T18:17:01 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getDriver -->
-      </class> <!-- testcases.Login -->
-      <class name="testcases.Menu">
-        <test-method signature="clickMenuTab()[pri:2, instance:testcases.Menu@66982506]" started-at="2025-05-27T18:16:42 IST" name="clickMenuTab" finished-at="2025-05-27T18:16:47 IST" duration-ms="4102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickMenuTab -->
-      </class> <!-- testcases.Menu -->
-      <class name="testcases.NewAppointments">
-        <test-method signature="createNewAppointment()[pri:3, instance:testcases.NewAppointments@70cf32e3]" started-at="2025-05-27T18:16:47 IST" name="createNewAppointment" finished-at="2025-05-27T18:17:01 IST" duration-ms="14035" status="FAIL">
-          <exception class="java.lang.RuntimeException">
+        </test-method> <!-- setUpDashboardPage -->
+        <test-method signature="Calendar()[pri:0, instance:pom.Test.DashboardTest@5386659f]" started-at="2025-05-28T17:57:51 IST" name="Calendar" finished-at="2025-05-28T17:58:01 IST" duration-ms="10133" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[❌ No data loaded from Excel sheet 'services'. Check sheet name, path, or content.]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Calendar'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\TS-014\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52010/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50177e7b0521a8eca6f0e404dd3b4176]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: ❌ No data loaded from Excel sheet 'services'. Check sheet name, path, or content.
-at testcases.NewAppointments.createNewAppointment(NewAppointments.java:101)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Calendar'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\TS-014\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52010/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50177e7b0521a8eca6f0e404dd3b4176
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pom.pages.DashboardPage.getMenuElement(DashboardPage.java:24)
+at pom.pages.DashboardPage.clickMenu(DashboardPage.java:29)
+at pom.pages.DashboardPage.clickCaledarPage(DashboardPage.java:41)
+at pom.Test.DashboardTest.Calendar(DashboardTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,11 +68,135 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewAppointment -->
-      </class> <!-- testcases.NewAppointments -->
+        </test-method> <!-- Calendar -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pom.Test.DashboardTest@5386659f]" started-at="2025-05-28T17:58:01 IST" name="setUp" finished-at="2025-05-28T17:58:05 IST" duration-ms="3943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logIn()[pri:0, instance:pom.Test.DashboardTest@5386659f]" started-at="2025-05-28T17:58:05 IST" name="logIn" finished-at="2025-05-28T17:58:22 IST" duration-ms="17171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method is-config="true" signature="setUpDashboardPage()[pri:0, instance:pom.Test.DashboardTest@5386659f]" started-at="2025-05-28T17:58:05 IST" name="setUpDashboardPage" finished-at="2025-05-28T17:58:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDashboardPage -->
+      </class> <!-- pom.Test.DashboardTest -->
+      <class name="pom.Test.LogInTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pom.Test.LogInTest@5745ca0e]" started-at="2025-05-28T17:58:22 IST" name="setUp" finished-at="2025-05-28T17:58:27 IST" duration-ms="4771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logIn()[pri:0, instance:pom.Test.LogInTest@5745ca0e]" started-at="2025-05-28T17:58:27 IST" name="logIn" finished-at="2025-05-28T17:58:43 IST" duration-ms="16417" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c519142f7ce4149a9cf74a70a0187ac, sendKeysToElement [value, id]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\TS-014\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52098}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52098/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5c519142f7ce4149a9cf74a70a0187ac)] -> class name: ng-invalid]
+Session ID: 5c519142f7ce4149a9cf74a70a0187ac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c519142f7ce4149a9cf74a70a0187ac, sendKeysToElement [value, id]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\TS-014\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52098}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52098/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5c519142f7ce4149a9cf74a70a0187ac)] -> class name: ng-invalid]
+Session ID: 5c519142f7ce4149a9cf74a70a0187ac
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
+at pom.pages.LogInPage.enterNumber(LogInPage.java:28)
+at pom.Test.LogInTest.logIn(LogInTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:586)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
+... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
+at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+... 3 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+      </class> <!-- pom.Test.LogInTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
