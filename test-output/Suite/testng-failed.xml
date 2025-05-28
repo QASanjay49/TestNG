@@ -13,6 +13,7 @@
         <methods>
           <include name="setUp"/>
           <include name="Calendar"/>
+          <include name="logIn"/>
           <include name="setUpDashboardPage"/>
         </methods>
       </class> <!-- pom.Test.DashboardTest -->
