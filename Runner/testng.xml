@@ -5,6 +5,7 @@
 		<classes>
 			<class name="pom.Test.DashboardTest" />
 			<class name="pom.Test.LogInTest" />
+			<class name="pom.Test.CalendarTest"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
