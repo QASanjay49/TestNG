@@ -27,7 +27,7 @@ public class DashboardTest extends LogInTest {
 		dashboardpage.clickAnalyticsPage();
 	}
 
-	@Test
+	@Test(priority=2)
 	public void Calendar() {
 		
 		dashboardpage.clickCaledarPage();

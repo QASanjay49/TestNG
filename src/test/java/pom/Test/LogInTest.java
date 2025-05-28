@@ -2,6 +2,7 @@ package pom.Test;
 
 import java.time.Duration;
 
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
@@ -15,7 +16,7 @@ public class LogInTest {
 	WebDriver driver;
 	
 	
-	   @BeforeMethod
+	   @BeforeClass
 	    public void setUp() throws InterruptedException {
 	        driver = new ChromeDriver();
 	        driver.manage().window().maximize();
@@ -27,7 +28,7 @@ public class LogInTest {
 	    }
 	
 	
-	@Test
+	@Test(priority=1)
 	public void logIn() throws InterruptedException {
 	
 	loginpage.enterNumber("7878787878");
