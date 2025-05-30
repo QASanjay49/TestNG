@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="pom.Test.CalendarTest">
+        <methods>
+          <include name="setup"/>
+          <include name="getDriver"/>
+          <include name="newAppointment"/>
+        </methods>
+      </class> <!-- pom.Test.CalendarTest -->
       <class name="pom.Test.LogInTest">
         <methods>
           <include name="logIn"/>

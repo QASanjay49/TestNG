@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,12 +108,17 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pom.Test.DashboardTest" class="method navigator-link" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="pom.Test.LogInTest" class="method navigator-link" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.Test.DashboardTest" class="method navigator-link" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.Test.CalendarTest" class="method navigator-link" hash-for-method="newAppointment">newAppointment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -128,6 +133,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pom.Test.CalendarTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="newAppointment">
+                  </a> <!-- newAppointment -->
+                  <span class="method-name">newAppointment</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pom.pages.CalendarPage.clickNewAppointment()&quot; because &quot;this.calendarpage&quot; is null
+	at pom.Test.CalendarTest.newAppointment(CalendarTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -242,24 +267,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logIn')
+data.setCell(0, 1, 'Calendar')
 data.setCell(0, 2, 'pom.Test.DashboardTest')
-data.setCell(0, 3, 6);
+data.setCell(0, 3, 9);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Calendar')
+data.setCell(1, 1, 'logIn')
 data.setCell(1, 2, 'pom.Test.DashboardTest')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'logIn')
-data.setCell(2, 2, 'pom.Test.LogInTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'newAppointment')
+data.setCell(2, 2, 'pom.Test.CalendarTest')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logIn')
+data.setCell(3, 2, 'pom.Test.LogInTest')
+data.setCell(3, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 ms</span>
+              <span class="suite-total-time">Total running time: 19 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -295,24 +324,24 @@ return data;
               <div class="chronological-class-name">pom.Test.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">21349 ms</span>
+                <span class="method-start">18875 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">logIn</span>
-                <span class="method-start">21357 ms</span>
+                <span class="method-start">18880 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">21368 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Calendar</span>
-                <span class="method-start">21369 ms</span>
+                <span class="method-start">18893 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDashboardPage</span>
+                <span class="method-start">18893 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.Test.LogInTest</div> <!-- chronological-class-name -->
@@ -320,14 +349,20 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">logIn</span>
-                <span class="method-start">21377 ms</span>
+                <span class="method-start">18906 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.Test.CalendarTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">newAppointment</span>
+                <span class="method-start">18909 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">21428 ms</span>
+                <span class="method-start">18989 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
