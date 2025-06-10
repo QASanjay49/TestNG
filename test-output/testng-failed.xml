@@ -5,23 +5,12 @@
     <classes>
       <class name="pom.Test.CalendarTest">
         <methods>
-          <include name="setup"/>
-          <include name="getDriver"/>
           <include name="newAppointment"/>
+          <include name="getDriver"/>
+          <include name="setup"/>
+          <include name="init"/>
         </methods>
       </class> <!-- pom.Test.CalendarTest -->
-      <class name="pom.Test.LogInTest">
-        <methods>
-          <include name="logIn"/>
-        </methods>
-      </class> <!-- pom.Test.LogInTest -->
-      <class name="pom.Test.DashboardTest">
-        <methods>
-          <include name="Calendar"/>
-          <include name="logIn"/>
-          <include name="setUpDashboardPage"/>
-        </methods>
-      </class> <!-- pom.Test.DashboardTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

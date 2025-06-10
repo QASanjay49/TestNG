@@ -6,9 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import pom.Base.NewBase;
 import pom.pages.DashboardPage;
 
-public class DashboardTest extends LogInTest {
+public class DashboardTest extends NewBase {
 
 	DashboardPage dashboardpage;
 

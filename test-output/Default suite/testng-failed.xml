@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.NewAppointment">
+      <class name="pom.Test.CalendarTest">
         <methods>
-          <include name="NewAppointment"/>
-          <include name="setup"/>
+          <include name="newAppointment"/>
           <include name="getDriver"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testcases.NewAppointment -->
+      </class> <!-- pom.Test.CalendarTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
